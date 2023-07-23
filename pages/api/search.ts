@@ -6,6 +6,9 @@ export default async function handler (req, res) {
 
     try {
 
+    // Every provider should be a module in utils/providers , this way we can load them dynamically
+    // Also cupsulate the logic of every provider in a different file
+    
       const providers = activeProviders.map(async providerName => {
         try {
           const providerModule = await import(
