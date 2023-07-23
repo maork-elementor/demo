@@ -1,0 +1,47 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest --config jest.config.js"
+  },
+  "dependencies": {
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.9",
+    "next": "13.4.9",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.63.6"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@types/node": "^20.4.2",
+    "@types/react": "^18.2.15",
+    "@types/sass": "^1.45.0",
+    "autoprefixer": "^10.4.14",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.4.7",
+    "postcss": "^8.4.26",
+    "prop-types": "^15.8.1",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.1.6",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "eslint": "^8.38.0",
+    "eslint-config-next": "^13.3.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.7"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest"
+    }
+  }
+}
