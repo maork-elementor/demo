@@ -3,9 +3,23 @@
 @tailwind utilities;
 
 body {
-    background-color: #F6F9FE;
+  background-color: #f6f9fe;
 }
 
-.hotel-image {
+.hotel {
+  padding: 5px;
+  border-radius: 12px;
+
+  .hotel-image {
     border-radius: 12px;
+  }
+
+  .hotel-price {
+    padding-top: 17%;
+  }
+
+  .hotel-name {
+    font-size: 14px;
+    font-weight: bold;
+  }
 }
