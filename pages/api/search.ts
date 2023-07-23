@@ -23,6 +23,8 @@ export default async function handler (req, res) {
 
       for (const providerModule of providerModules) {
         const { Search } = providerModule
+
+        // Search shold be an interface with a methods, that every provider should implement
         const providerResult = await Search(req.query)
         searchResults.push(providerResult)
       }

@@ -75,6 +75,7 @@ export default function Home ({}) {
                   <img
                     src={hotelImage}
                     alt={hotelName}
+                    className='hotel-image'
                     onError={e => {
                       e.target.onerror = null
                       e.target.src = 'https://via.placeholder.com/228x152'
@@ -82,13 +83,13 @@ export default function Home ({}) {
                   />
                 </div>
 
-                <div className='w-full md:w-1/2'>
+                <div className='w-full md:w-1/2 p-4'>
                   <h2>{hotelName}</h2>
                   <p>{hotelRating}</p>
                 </div>
 
-                <div className='w-full md:w-1/3'>
-                  <p>{hotelPrice}</p>
+                <div className='w-full md:w-1/3 p-4 align-bottom'>
+                  <p className='text-right align-bottom'>{hotelPrice}</p>
                 </div>
               </div>
             )
