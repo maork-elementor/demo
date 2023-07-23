@@ -3,12 +3,11 @@ import { useState } from 'react'
 import { fetchData } from '../utils/api'
 
 export default function Home ({}) {
-
   // For demo purposes, we'll use state to store the search params
   const [searchParams, setSearchParams] = useState({
     ski_site: 1,
-    from_date: '01/08/2022',
-    to_date: '01/12/2026',
+    from_date: '01/08/2023',
+    to_date: '01/12/2025',
     group_size: 2
   })
 
@@ -56,7 +55,7 @@ export default function Home ({}) {
       </nav>
 
       <div className='max-w-screen-xl flex flex-wrap justify-between mx-auto'>
-        <div className='w-full md:w-1/2 p-4 bg-blue-200'>
+        <div className='w-full md:w-1/2 p-4'>
           {isLoading && <p>Loading...</p>}
 
           {results.map((result, index) => {
@@ -68,7 +67,10 @@ export default function Home ({}) {
             const hotelPrice = result.PricesInfo.AmountBeforeTax
 
             return (
-              <div key={index} className='flex flex-col md:flex-row bg-white mb-4'>
+              <div
+                key={index}
+                className='flex flex-col md:flex-row bg-white mb-4'
+              >
                 <div className='w-full md:w-1/2'>
                   <img
                     src={hotelImage}
@@ -92,8 +94,8 @@ export default function Home ({}) {
             )
           })}
         </div>
-        <div className='w-full md:w-1/4 p-4 bg-blue-200'></div>
-        <div className='w-full md:w-1/4 p-4 bg-red-200'></div>
+        <div className='w-full md:w-1/4 p-4 '></div>
+        <div className='w-full md:w-1/4 p-4 '></div>
       </div>
     </>
   )

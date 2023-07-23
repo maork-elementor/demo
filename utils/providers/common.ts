@@ -1,7 +1,5 @@
-const getActiveProviders = () => {
-  const providers = process.env.ACTIVE_PROVIDERS.split(',')
-  return providers
-}
+const getActiveProviders = () => process.env.ACTIVE_PROVIDERS.split(',');
+
 
 export {
     getActiveProviders
